@@ -11,7 +11,7 @@
 
 int menu(void);
 int find_BOOK(void);
-int find_BOOK2(char* input_title);
+int find_BOOK2(char* input_title, int file);
 int read_line(char temp_line[], int fd);
 void total_selling(void);
 void selling_BOOK(void);

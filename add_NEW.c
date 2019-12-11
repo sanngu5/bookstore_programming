@@ -14,7 +14,7 @@ void add_NEW(){
 	printf(" title: ");
 	scanf("%[^\n]s", input_title);
 	
-	if(find_BOOK2(input_title) == -1){
+	if(find_BOOK2(input_title, 0) == -1){
 		fflush(stdin);
 		
 		system("clear");

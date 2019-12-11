@@ -42,12 +42,16 @@ int find_BOOK(){
 	return -1;
 }
 
-int find_BOOK2(char* input_title){
+int find_BOOK2(char* input_title, int file){
 	
 	int fd, check;
 	char temp_line[100];
 	
-	fd = open("./book_list.txt",O_RDONLY);
+	if(file == 0)
+		fd = open("./book_list.txt",O_RDONLY);
+	else if(file == 1)
+		fd = open("./sold_out.txt", O_RDONLY);
+
 	if(fd == -1)
 		perror("failed to open");
 	

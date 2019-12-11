@@ -111,7 +111,7 @@ void remove_sold_out(char* name){
 	system("clear");
 	FILE *fp,*fp1;
 	int line_count=0;
-	int num = find_BOOK2(name);
+	int num = find_BOOK2(name, 1);
 	char buffer[MAX_LENGTH];
 	
 	fp=fopen("./sold_out.txt","r");
